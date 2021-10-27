@@ -1,0 +1,21 @@
+﻿@model IEnumerable<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Anasayfa</title>
+</head>
+<body>
+    @foreach(string product in Model)
+    {
+    <a href="Home/Index/" @product> @product</a>
+    }
+
+
+</body>
+</html>
